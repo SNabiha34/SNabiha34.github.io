@@ -1,6 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Build-a-Card</title>
+  <style>
+    .card {
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      color: white;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Create Your Custom Card!</h2>
+  <input type="text" id="nameInput" placeholder="Your name"><br><br>
+  <input type="text" id="messageInput" placeholder="Your message"><br><br>
+  <input type="color" id="colorInput"><br><br>
+  <button onclick="generateCard()">Create Card</button>
+
+  <div id="cardContainer"></div>
+
+  <script>
+    function generateCard() {
+      const name = document.getElementById("nameInput").value;
+      const message = document.getElementById("messageInput").value;
+      const color = document.getElementById("colorInput").value;
+
+      const cardHTML = "<div class='card' style='background-color: " + color + ";'>" +
+                         "<h3>Hello, " + name + "!</h3>" +
+                         "<p>" + message + "</p>" +
+                       "</div>";
+
+      document.getElementById("cardContainer").innerHTML = cardHTML;
+    }
+  </script>
+
+</body>
+</html>
+<!-- sample 
+<!DOCTYPE html>
+<html>
+<head>
   <title>Concatenation Challenge Bonus</title>
 </head>
 <body>
@@ -9,6 +51,7 @@
   <h2>Below create you're custom card!</h2>
 
   <!-- This paragraph will display the result -->
+<!-- sample
   <p id="output"></p>
 
   <script>
@@ -26,3 +69,4 @@
 
 </body>
 </html>
+-->
