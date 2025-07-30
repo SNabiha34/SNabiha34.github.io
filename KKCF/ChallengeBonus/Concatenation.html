@@ -5,28 +5,38 @@
 </head>
 <body>
 
+  <!--Header of the page. What the page is about-->
   <h1>Create a Digital Card!</h1>
-<h2>Below create your custom card!</h2>
+  <h2>Below create your custom card!</h2>
 
-<input type="text" id="nameInput" placeholder="Enter your name"><br><br>
-<input type="text" id="messageInput" placeholder="Enter a message"><br><br>
+  <!--Text inputs from user to create the digital card-->
+  <input type="text" id="nameInput" placeholder="Enter your name"><br><br>
+  <input type="text" id="messageInput" placeholder="Enter a message"><br><br>
 
-<button onclick="makeCard()">Make Card</button>
+  <!--Button to create the digital card come to life-->
+  <button onclick="makeCard()">Make Card</button>
 
-<p id="cardOutput"></p>
+  <!--Displays the user inputs-->
+  <p id="cardOutput"></p>
 
 <script>
+  //creates the function
   function makeCard() {
+    //variable 1 to get the user's input, specifically the name they want to inlcude in the digital card
     var name = document.getElementById("nameInput").value;
+
+    //variable 2 to get user's input, specifically the message they want to include on the digital card
     var message = document.getElementById("messageInput").value;
 
+    //variable 3 to put together variable 1 and 2 to create the digital card
     var fullText = "Hello " + name + "! " + message;
-
+    
+    //allows the JavaScript Code to appear on HTML element
     document.getElementById("cardOutput").textContent = fullText;
   }
 </script>
 
-<!--
+<!--base/example code
   <script>
     // Variables with parts of the sentence
     var phraseStart = "How much I love to combine ";
