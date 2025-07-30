@@ -6,23 +6,26 @@
 <body>
 
   <h1>Create a Digital Card!</h1>
-  <h2>Below create you're custom card!</h2>
+<h2>Below create your custom card!</h2>
 
-  <input type ="text" id="nameInput" placeHolder="Enter your name"><br><br>
-  <input type="text" id="message input" placeholder="Enter a message"><br><br>
+<input type="text" id="nameInput" placeholder="Enter your name"><br><br>
+<input type="text" id="messageInput" placeholder="Enter a message"><br><br>
 
-  <button onclick="makeCard()">Make Card</button>
+<button onclick="makeCard()">Make Card</button>
 
-  <!-- This paragraph will display the result -->
-  <p id="cardOutput"></p>
+<p id="cardOutput"></p>
 
-  <script>
-    function makeCard() {
-      var name = document.getElementById("nameInput").value;
-      var message = document.getElementById("messageInput").value;
+<script>
+  function makeCard() {
+    var name = document.getElementById("nameInput").value;
+    var message = document.getElementById("messageInput").value;
 
-      document.getElementById("cardOutput").textContent = "<h3>Hello " + name + "!</h3>" + "<p>" + message + "</p>";
-  </script>
+    var fullText = "Hello " + name + "! " + message;
+
+    document.getElementById("cardOutput").textContent = fullText;
+  }
+</script>
+
 <!--
   <script>
     // Variables with parts of the sentence
