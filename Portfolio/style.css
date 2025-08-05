@@ -1,1 +1,13 @@
+/* Only the 'about' row gets this dark background */
+.about-row {
+  background-color: #2D3C53;
+  color: white; /* White text for contrast */
+  padding: 30px 0;
+  border-radius: 8px;
+}
+
+.grid-box img {
+  max-width: 100%;
+  height: auto;
+}
 
