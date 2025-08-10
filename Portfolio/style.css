@@ -10,37 +10,28 @@
   height: auto;
 }
 
-/* Center any element with both syedaLogo & slogan classes */
+/* Center slogan text */
 .syedaLogo.slogan {
   text-align: center;
 }
 
-/* Center logo container */
-.syedaLogo {
-  margin-left: auto;
-  margin-right: auto;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Center wireframe image */
-.wireframe.sheet {
-  margin-left: auto;
-  margin-right: auto;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Center brandkit image */
+/* General centering for logo, wireframe, and brandkit containers */
+.syedaLogo,
+.wireframe.sheet,
 .brandkit {
-  margin-left: auto;
-  margin-right: auto;
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px; /* space around content */
+}
+
+/* Make all images responsive */
+.syedaLogo img,
+.wireframe.sheet img,
+.brandkit img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
