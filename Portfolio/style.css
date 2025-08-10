@@ -10,48 +10,24 @@
   height: auto;
 }
 
-/* Center slogan text */
-.syedaLogo.slogan {
-  text-align: center;
-}
-
-/* General centering for logo, wireframe, and brandkit containers */
-.syedaLogo,
-.wireframe.sheet,
-.brandkit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px; /* space around content */
-}
-
-.syedaLogo{
-  max-width: 150px;
-}
-
-/* Make all images responsive */
-.syedaLogo img,
-.wireframe.sheet img,
-.brandkit img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
+/* Reusable centering class */
 .center-content {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  flex-direction: column;
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: center;    /* center horizontally */
+  justify-content: center;/* center vertically within section */
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 
+/* Make images responsive */
 .center-content img {
   max-width: 100%;
   height: auto;
-  display: block;
+}
+
+/* Control main logo size */
+.big-logo {
+  max-width: 150px; /* adjust size here */
 }
 
