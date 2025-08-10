@@ -45,3 +45,6 @@
   height: auto;
 }
 
+.slogan {
+  transition: color 0.3s ease;
+}
