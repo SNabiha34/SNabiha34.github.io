@@ -35,3 +35,19 @@
   height: auto;
   display: block;
 }
+
+.center-content {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.center-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
