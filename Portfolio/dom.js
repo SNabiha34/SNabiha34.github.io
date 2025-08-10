@@ -1,16 +1,15 @@
-// Get the slogan element
-const slogan = document.getElementById("sloganText");
+// Access the DOM element
+let slogan = document.getElementById("sloganText");
 
-// Store the original color
-const originalColor = slogan.style.color || "black";
+// Store its original color from the DOM
+let originalColor = slogan.style.color || "black";
 
-// When mouse enters -> change color
+// DOM Event: mouse over
 slogan.addEventListener("mouseover", function() {
-  slogan.style.color = "tomato"; // change to any color you like
+  slogan.style.color = "tomato"; // change color in DOM
 });
 
-// When mouse leaves -> revert color
+// DOM Event: mouse out
 slogan.addEventListener("mouseout", function() {
-  slogan.style.color = originalColor;
+  slogan.style.color = originalColor; // revert color in DOM
 });
-
