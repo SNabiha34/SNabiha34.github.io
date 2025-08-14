@@ -1,7 +1,8 @@
 /* Only the 'about' row gets this dark background */
 .about-row {
-  background-color: #2D3C53;
+  background-color: #2D3C53 !important;
   color: white; /* White text for contrast */
+  width: 100%;
 }
 
 .grid-box img {
